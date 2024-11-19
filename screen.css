@@ -1,4 +1,9 @@
 /* Add screen styles below */
-a.active {
-    font-weight: bold;
+html {
+    background-color: #F6F7F8;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
