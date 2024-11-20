@@ -15,6 +15,7 @@ html, body {
 body {
     background-color: var(--Seasalt, #F6F7F8);
     line-height: 1.6;
+    font-family: "Inter", serif;
 }
 
 
@@ -66,7 +67,7 @@ body {
 }
 
 .main-content h1 {
-
+    font-family: "Grandstander", cursive;
     font-size: 2rem;
     color: var(--Rich-Black, #011627);
 }
