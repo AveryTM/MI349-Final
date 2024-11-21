@@ -18,58 +18,55 @@ body {
     font-family: "Inter", serif;
 }
 
-.header {
+nav {
     position: sticky;
-    background: var(--Malachite, #00E05A);
-    text-align: center;
+    top: 0;
+    width: 100%;
+    background-color: #00E05A;
+    overflow: auto;
 }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
-    margin: 0 auto;
-    gap: 120px;
-}
-
-.left-nav, .right-nav {
-    display: flex;
-    gap: 15px;
-}
-
-.left-nav a, .right-nav a {
-    color: var(--Seasalt, #F6F7F8);
-    background-color: var(--French-Violet, #8214b1);
+nav a {
+    float: left;
+    padding: 12px;
+    color: #011627;
     text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
+    font-size: 17px;
+    font-family: "Grandstander";
+    width: 25%;
     text-align: center;
-    transition: background-color 0.3s
 }
 
-.left-nav a:hover, .right-nav a:hover {
-    background-color: #5e00b3;
+nav a:hover {
+    background-color: #04c04f;
 }
 
-#logo {
-    max-height: 180px;
-    border-radius: 30px;
-    padding: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+nav a.active {
+    background-color: #8214b1;
+    color: #F6F7F8;
 }
 
 main {
     display: flex;
-    padding: 80px;
+    padding: 40px;
 }
 
 .main-content {
-    flex: 2;
     text-align: center;
-    padding: 0 70px;
+    padding: 70px 50px;
+}
+
+#logo-container {
+    max-height: 460px;
+    background-color: #8214b1;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#logo {
+    max-height: 410px;
+    padding: 15px;
+    max-width: auto;
 }
 
 .main-content h1 {
@@ -87,8 +84,8 @@ main {
 .sign-up {
     font-family: "grandstander";
     display: inline-block;
-    background-color: var(--French-Violet, #8214b1);
-    color: var(--Seasalt, #F6F7F8);
+    background-color: #00E05A;
+    color: #011627;
     padding: 15px 30px;
     text-decoration: none;
     font-weight: bold;
@@ -98,6 +95,7 @@ main {
 
 .sign-up:hover {
     background-color: #5e00b3;
+    color: var(--Seasalt, #F6F7F8);
 }
 
 .footer-bar {
@@ -107,32 +105,4 @@ main {
     position: fixed;
     bottom: 0;
     left: 0;
-}
-
-#stock-photo-container {
-    background-color: var(--Malachite, #00E05A);
-    flex: 1;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
-}
-
-#stock-photo {
-    padding: 15px;
-    max-height: 450px;
-    max-width: auto;
-    border-radius: 40px;
-}
-
-#photo-credits {
-    text-decoration: none;
-    text-align: center;
-    background-color: var(--French-Violet, #8214b1);
-    color: var(--Seasalt, #F6F7F8);
-    font-family: "grandstander";
-    font-size: smaller;
-    padding: 10px;
-    border-radius: 15px;
 }
