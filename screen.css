@@ -19,6 +19,7 @@ body {
 }
 
 .header {
+    position: sticky;
     background: var(--Malachite, #00E05A);
     text-align: center;
 }
@@ -33,7 +34,6 @@ body {
 }
 
 .left-nav, .right-nav {
-    position: sticky;
     display: flex;
     gap: 15px;
 }
@@ -63,13 +63,13 @@ body {
 
 main {
     display: flex;
-    padding: 40px;
+    padding: 80px;
 }
 
 .main-content {
     flex: 2;
     text-align: center;
-    padding: 70px 50px;
+    padding: 0 70px;
 }
 
 .main-content h1 {
@@ -102,7 +102,7 @@ main {
 
 .footer-bar {
     background-color: var(--Malachite, #00E05A);
-    height: 50px;
+    height: 30px;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -127,6 +127,7 @@ main {
 }
 
 #photo-credits {
+    text-decoration: none;
     text-align: center;
     background-color: var(--French-Violet, #8214b1);
     color: var(--Seasalt, #F6F7F8);
