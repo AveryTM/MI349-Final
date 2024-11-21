@@ -18,8 +18,6 @@ body {
     font-family: "Inter", serif;
 }
 
-
-
 .header {
     background: var(--Malachite, #00E05A);
     text-align: center;
@@ -27,14 +25,15 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 90%;
-    max-width: 1200px;
+    width: 95%;
     margin: 0 auto;
+    gap: 120px;
 }
 
 .left-nav, .right-nav {
+    position: sticky;
     display: flex;
     gap: 15px;
 }
@@ -55,15 +54,22 @@ body {
 }
 
 #logo {
-    max-height: 120px;
+    max-height: 180px;
     border-radius: 30px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+main {
+    display: flex;
+    padding: 40px;
 }
 
 .main-content {
+    flex: 2;
     text-align: center;
-    padding: 50px 20px;
+    padding: 70px 50px;
 }
 
 .main-content h1 {
@@ -79,9 +85,10 @@ body {
 }
 
 .sign-up {
+    font-family: "grandstander";
     display: inline-block;
     background-color: var(--French-Violet, #8214b1);
-    color: #fff;
+    color: var(--Seasalt, #F6F7F8);
     padding: 15px 30px;
     text-decoration: none;
     font-weight: bold;
@@ -100,4 +107,31 @@ body {
     position: fixed;
     bottom: 0;
     left: 0;
+}
+
+#stock-photo-container {
+    background-color: var(--Malachite, #00E05A);
+    flex: 1;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#stock-photo {
+    padding: 15px;
+    max-height: 450px;
+    max-width: auto;
+    border-radius: 40px;
+}
+
+#photo-credits {
+    text-align: center;
+    background-color: var(--French-Violet, #8214b1);
+    color: var(--Seasalt, #F6F7F8);
+    font-family: "grandstander";
+    font-size: smaller;
+    padding: 10px;
+    border-radius: 15px;
 }
