@@ -48,6 +48,9 @@ nav a.active {
 
 main {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
     padding: 40px;
 }
 
@@ -100,9 +103,15 @@ main {
 
 .footer-bar {
     background-color: var(--Malachite, #00E05A);
-    height: 30px;
+    height: 2%;
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
+    padding: 2rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
 }
