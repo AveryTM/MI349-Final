@@ -102,6 +102,14 @@ main {
     color: var(--Seasalt, #F6F7F8);
 }
 
+#about {
+    font-family: "Grandstander";
+    text-align: center;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
 .footer-bar {
     background-color: var(--Malachite, #00E05A);
     height: 2%;
@@ -115,8 +123,4 @@ main {
     justify-content: center;
     align-items: center;
     gap: 0.2rem;
-}
-
-.about-us {
-    display: flex;
 }
