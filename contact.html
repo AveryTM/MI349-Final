@@ -18,9 +18,45 @@
         <a class="active" href="contact.html">Contact</a>
         <a href="https://schools.mybrightwheel.com/sign-in" target="_blank">Parent Portal <i class="fa">&#xf08e;</i></a>
     </nav>
-    <main>
-      
+    <h1 id="contact-title">Contact Us</h1>
+    <main class="contact-page">
+      <section id="contact-phone">
+        <i id="icon" class="fa">&#xf098;</i>
+        <h2>Phone</h2>
+        <p>1-517-290-7407</p>
+      </section>
+      <section id="contact-form">
+        <i id="icon" class="fa">&#xf2b6;</i>
+        <h2>Email Inquiry</h2>
+        <p>Send us your questions or concerns by filling out the form below and we will get back to you as soon as possible.</p>
+      </section>
+      <section id="contact-facebook">
+        <i id="icon" class="fa">	&#xf082;</i>
+        <h2>Facebook</h2>
+        <p>Find more information and pictures at our Facebook.</p>
+      </section>
     </main>
+    <div id="form-container">
+      <form action="/" method="post" class="email-form" netlify>
+        <input type="hidden" id="timestamp" name="timestamp" value="0000">
+        <p><label for="name">Enter Name: </label></p>
+        <input type="text" name="name" id="name" required>
+        <p><label for="email">Enter Email: </label></p>
+        <input type="email" name="email" id="email" required>
+        <p><label for="contact-reason">Reason for contact: </label></p>
+        <select name="contact-reason" id="contact-reason">
+            <option>Looking for Daycare</option>
+            <option>Schedule a Tour</option>
+            <option>Interested in Work</option>
+        </select>
+        <p><label for="comments">Comments:</label></p>
+        <textarea id="comments" name="comments" rows="3"></textarea>
+        <div id="form_buttons">
+            <button type="submit">Submit Request</button>
+            <button type="reset">Reset Form</button>
+        </div>
+      </form>
+    </div>
     <footer class="footer-bar">© 2024 Michelle Matt's Family Daycare</footer>
     <script src="index.js"></script>
   </body>
