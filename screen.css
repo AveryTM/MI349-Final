@@ -189,14 +189,14 @@ h1 {
 }
 
 #form-container {
-    background-color: #8214b1;
+    background-color: #00E05A;
     padding: 25px;
     width: 60%;
     border-radius: 25px;
-    border: 2px solid #EEF5FC;
+    border: 2px solid #F6F7F8;
     text-align: center;
     margin: 0 auto;
-    color: #F6F7F8;
+    color: #011627;
 }
 
 #form_buttons {
@@ -211,11 +211,39 @@ button {
     padding: 14px 40px;
     border-radius: 10px;
     border-color: #F6F7F8;
-    color: #011627;
-    background-color: #00E05A;
+    color: #F6F7F8;
+    background-color: #8214b1;
     transition-duration: 0.4s;
 }
 
 button:hover {
-    background-color: #04c04f;
+    background-color: #580e78;
+}
+
+
+@media screen and (max-width: 890px) {
+    main {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #logo-container {
+        margin-bottom: 20px;
+    }
+
+    .review-card {
+        max-width: 90%;
+    }
+
+    #form-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
 }
